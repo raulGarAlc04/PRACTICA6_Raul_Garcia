@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fondoTransformers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/transformers" />
+
+    <ImageView
+        android:id="@+id/cartelTransformers"
+        android:layout_width="128dp"
+        android:layout_height="265dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transformers_cartel" />
+
+    <TextView
+        android:id="@+id/tituloPelicula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="248dp"
+        android:text="Transformers: el\ndespertar de las bestias"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/cartelTransformers"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnCompartir"
+        android:layout_width="17dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintLeft_toRightOf="@id/tituloPelicula"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <Button
+        android:id="@+id/btnAlquilar"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        android:text="ALQUILAR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloPelicula" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp"
+        android:backgroundTint="@color/black"
+        android:text="COMPRAR"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tituloPelicula" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:backgroundTint="#FF0101"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/btnAlquilar"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintLeft_toRightOf="@id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@id/btnAlquilar"
+        app:srcCompat="@drawable/ic_family" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnTomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:backgroundTint="#CDFFEB3B"
+        app:layout_constraintLeft_toRightOf="@id/btnSocial"
+        app:layout_constraintTop_toBottomOf="@id/btnComprar"
+        app:srcCompat="@drawable/tomato" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnParar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        app:backgroundTint="#07750C"
+        app:layout_constraintLeft_toRightOf="@id/btnTomato"
+        app:layout_constraintTop_toBottomOf="@id/btnComprar"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="260dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/descripcionPeli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        android:layout_marginBottom="220dp"
+        android:text="Descripción de la pelicula"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

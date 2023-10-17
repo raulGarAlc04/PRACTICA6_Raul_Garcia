@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@id/divisor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@drawable/background_1" />
+
+    <ImageView
+        android:id="@+id/imgTelefono"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toTopOf="@id/divisor"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tlfn_01"
+        app:srcCompat="@drawable/ic_phone" />
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="236dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMail"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divisor"
+        app:srcCompat="@drawable/ic_email" />
+
+    <ImageView
+        android:id="@+id/imgMensajes_01"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@id/imgMensajes_02"
+        app:layout_constraintLeft_toRightOf="@id/tlfn_01"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_sms" />
+
+    <ImageView
+        android:id="@+id/imgMensajes_02"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="72dp"
+        app:layout_constraintBottom_toTopOf="@id/divisor"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_sms"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="224dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@id/imgMensajes_01"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/tlfn_01"
+        android:layout_width="283dp"
+        android:layout_height="17dp"
+        android:layout_marginBottom="180dp"
+        android:hint="Movil"
+        android:text="687100200"
+        app:layout_constraintBottom_toTopOf="@id/divisor"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintLeft_toRightOf="@id/imgTelefono"
+        app:layout_constraintRight_toLeftOf="@id/imgMensajes_01" />
+
+    <TextView
+        android:id="@+id/tlfn_02"
+        android:layout_width="283dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginRight="20dp"
+        android:hint="Móvil"
+        android:text="699500600"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/imgMensajes_02"
+        app:layout_constraintTop_toBottomOf="@id/tlfn_01" />
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="283dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mail"
+        android:text="info@gmail.com"
+        app:layout_constraintLeft_toRightOf="@id/imgMail"
+        app:layout_constraintTop_toBottomOf="@id/divisor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
